@@ -4,6 +4,20 @@
   border: 1px solid tomato;
 }
 
+.sidebar-left {
+  max-width: 275px;
+  height: 500px;
+  border: 1px solid tomato;
+}
+
+.header {
+  background: linear-gradient(269.41deg, #DB5D79 0.41%, #E2645A 99.41%);
+}
+
+.header img {
+  width: 40px;
+}
+
 .conteudo-principal {
   border: 1px solid #823782;
 }
