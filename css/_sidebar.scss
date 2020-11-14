@@ -1,8 +1,44 @@
 
 .sidebar-left{
     width: 275px;
-    height: 500px;
+    height: auto;
     box-shadow: 0px 3px 10px rgba(88, 88, 88, 0.1), 0px 16px 31px rgba(88, 88, 88, 0.1);
-    margin-left: 45px;
-    border: 1px solid tomato;
+    margin-left: 24px;
+  
+
+    .inicio img{
+        width: 150px;
+    }
+    hr{
+        width: 200px;
+        border: 1px solid #E0E0E0;
+    }
+    .sidebar-content{
+        a{
+            display: block;
+            padding: 10px;
+            
+        }
+        .content{
+            padding: 10px;
+            display:flex;
+            align-items: center;
+            margin-left: 30px;
+            a{
+                color: $cinza-escuro;
+                &:hover{
+                    color: $azul;
+                    text-decoration: none;
+                }
+                .active{
+                    width: 80px;
+                    background-color:black;
+                }
+            }
+            img{
+                width: 20px;
+                color: black;
+            }
+        } 
+    }
 }
