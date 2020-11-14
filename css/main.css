@@ -30,10 +30,37 @@
 
 .conteudo-principal {
   margin-top: 24px;
+  font-family: 'Lato', sans-serif;
 }
 
 .conteudo-principal .width-cards {
   width: 800px;
+  height: 600px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 16px 31px rgba(88, 88, 88, 0.1);
+          box-shadow: 0px 16px 31px rgba(88, 88, 88, 0.1);
+  border-radius: 30px;
+  padding: 50px;
+}
+
+.conteudo-principal img {
+  width: 60px;
+}
+
+.conteudo-principal p {
+  line-height: 28px;
+  font-size: 18px;
+}
+
+.conteudo-principal .header-cards {
+  line-height: 28px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.conteudo-principal .header-cards .card-content {
+  width: 460px;
 }
 
 .conteudo-principal {

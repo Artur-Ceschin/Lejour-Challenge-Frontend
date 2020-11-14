@@ -1,7 +1,31 @@
 .conteudo-principal{
     margin-top: 24px;
+    font-family: 'Lato', sans-serif;
 
     .width-cards{
         width: 800px;
+        height: 600px;
+        background: #FFFFFF;
+        box-shadow: 0px 16px 31px rgba(88, 88, 88, 0.1);
+        border-radius: 30px;
+        padding: 50px;
+    }
+
+    img{
+        width: 60px;
+    }
+
+    p{
+        line-height:28px;
+        font-size:18px
+    }
+
+    .header-cards{
+        line-height: 28px;
+        align-items: center;
+
+       .card-content{
+           width: 460px;
+       }
     }
 }
