@@ -35,7 +35,7 @@
 
 .conteudo-principal .width-cards {
   width: 800px;
-  height: 600px;
+  height: auto;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 16px 31px rgba(88, 88, 88, 0.1);
           box-shadow: 0px 16px 31px rgba(88, 88, 88, 0.1);
@@ -44,7 +44,7 @@
 }
 
 .conteudo-principal img {
-  width: 60px;
+  width: 50px;
 }
 
 .conteudo-principal p {
@@ -52,15 +52,51 @@
   font-size: 18px;
 }
 
-.conteudo-principal .header-cards {
-  line-height: 28px;
+.conteudo-principal .first-content p {
+  margin-left: 86px;
+  width: 460px;
+}
+
+.conteudo-principal .first-content .header-cards {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.conteudo-principal .header-cards .card-content {
+.conteudo-principal .first-content .header-cards .card-content {
   width: 460px;
+}
+
+.conteudo-principal .first-content .header-cards .card-content h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 22px;
+}
+
+.conteudo-principal .botoes-card .button-color {
+  background: #FFFFFF;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 16px 31px rgba(88, 88, 88, 0.1);
+          box-shadow: 0px 16px 31px rgba(88, 88, 88, 0.1);
+}
+
+.conteudo-principal .botoes-card p {
+  margin: 0px;
+  padding: 8px;
+}
+
+.conteudo-principal .botoes-card .footer-content {
+  color: white;
+  background-color: #84B8E2;
+  border-radius: 30px;
+  padding: 17px 56px;
+  border: none;
+  width: 200px;
+}
+
+.conteudo-principal .botoes-card .circle-button {
+  width: 60px;
+  padding: 15px;
 }
 
 .conteudo-principal {
