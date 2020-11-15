@@ -118,6 +118,18 @@
   width: 40px;
 }
 
+.header .main-button button {
+  width: 300px;
+  height: 30px;
+  font-weight: bold;
+}
+
+.header .main-button button a {
+  font-family: 'Merriweather', serif;
+  color: white;
+  font-weight: bold;
+}
+
 .header button {
   color: #ffffff;
   border: 1px solid white;
@@ -125,15 +137,19 @@
   border-radius: 48px;
 }
 
+.container-lejour {
+  background-color: rgba(88, 88, 88, 0.1);
+}
+
 .conteudo-principal {
-  margin-top: 24px;
   font-family: 'Lato', sans-serif;
-  min-height: 800px;
   overflow-x: hidden;
+  max-width: 1220px;
+  margin: auto;
 }
 
 .conteudo-principal .width-cards {
-  width: 580px;
+  min-width: 580px;
   height: auto;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 16px 31px rgba(88, 88, 88, 0.1);
@@ -141,7 +157,6 @@
   border-radius: 30px;
   padding: 50px;
   margin-bottom: 20px;
-  margin-right: 24px;
 }
 
 .conteudo-principal img {

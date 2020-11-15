@@ -8,6 +8,18 @@
     img{
         width: 40px;
     }
+
+    .main-button button{
+        width:300px;
+        height:30px;
+        font-weight: bold;
+
+        a{
+            font-family: 'Merriweather', serif;
+            color: white;
+            font-weight:bold;
+        }
+    }
     button{
         color:#ffffff;
         border: 1px solid white;

@@ -1,18 +1,23 @@
+.container-lejour{
+    background-color:rgba(88, 88, 88, 0.1);
+}
+
 .conteudo-principal{
-    margin-top: 24px;
+    
     font-family: 'Lato', sans-serif;
-    min-height:800px;
     overflow-x: hidden;
+    max-width: 1220px;
+    margin: auto;
   
     .width-cards{
-        width: 580px;
+        min-width: 580px;
         height: auto;
         background: #FFFFFF;
         box-shadow: 0px 16px 31px rgba(88, 88, 88, 0.1);
         border-radius: 30px;
         padding: 50px;
         margin-bottom:20px;
-        margin-right:24px;
+        
     }
 
     img{
