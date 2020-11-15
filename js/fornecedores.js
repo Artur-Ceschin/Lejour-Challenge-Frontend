@@ -1,6 +1,9 @@
+const endPointFornecedoresRanking = '/fornecedores/ranking';
+const endPointFornecedoresInvoices = '/fornecedores/invoices';
+
 window.onload = function() {
-    obterDadosAPILejour('/fornecedores/ranking', renderizarGraficoCategoriaVsFatura);
-    obterDadosAPILejour('/fornecedores/invoices', renderizarGraficoAgendamentoVsFatura);
+    obterDadosAPILejour(endPointFornecedoresRanking, renderizarGraficoCategoriaVsFatura);
+    obterDadosAPILejour(endPointFornecedoresInvoices, renderizarGraficoAgendamentoVsFatura);
 }
 
 
@@ -20,8 +23,11 @@ function renderizarGraficoCategoriaVsFatura(data) {
         }]
     };
 
+    var chartContainer = $('#faturamentoPorCategoriaFornecedorGrafico');
+    chartContainer.css('height', '500px');
+
     var ctx = document.getElementById('faturamentoPorCategoriaFornecedorGrafico').getContext('2d');
-    window.myBar = new Chart(ctx, {
+    window.myBar1 = new Chart(ctx, {
         type: 'horizontalBar',
         data: barChartData,
         options: {
@@ -32,9 +38,12 @@ function renderizarGraficoCategoriaVsFatura(data) {
             title: {
                 display: true,
                 text: ''
-            }
+            },
+            maintainAspectRatio: true
         }
     });
+
+
 }
 
 function renderizarGraficoAgendamentoVsFatura(data) {
@@ -62,7 +71,7 @@ function renderizarGraficoAgendamentoVsFatura(data) {
     };
 
     let ctx = document.getElementById('agendamentosVsFaturasGrafico').getContext('2d');
-    window.myBar = new Chart(ctx, {
+    window.myBar2 = new Chart(ctx, {
         type: 'bar',
         data: barChartData,
         options: {
@@ -88,4 +97,16 @@ function renderizarGraficoAgendamentoVsFatura(data) {
             }
         }
     });
+}
+
+function filtrarGraficoCategoriaVsFatura(queryParams) {
+    myBar1.destroy();
+
+    obterDadosAPILejour(endPointFornecedoresRanking, renderizarGraficoCategoriaVsFatura, queryParams);
+}
+
+function filtrarGraficoAgendamentoVsFatura(queryParams) {
+    myBar2.destroy();
+
+    obterDadosAPILejour(endPointFornecedoresInvoices, renderizarGraficoAgendamentoVsFatura, queryParams);
 }
