@@ -3,16 +3,16 @@
     font-family: 'Lato', sans-serif;
     min-height:800px;
     overflow-x: hidden;
-
+  
     .width-cards{
-        width: 900px;
-        margin: auto;
+        width: 580px;
         height: auto;
         background: #FFFFFF;
         box-shadow: 0px 16px 31px rgba(88, 88, 88, 0.1);
         border-radius: 30px;
         padding: 50px;
         margin-bottom:20px;
+        margin-right:24px;
     }
 
     img{
@@ -28,6 +28,7 @@
         p{
             margin-left:66px;
             width: 460px;
+            
         }
         .header-cards{
             

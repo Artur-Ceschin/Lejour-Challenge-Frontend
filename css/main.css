@@ -4,6 +4,8 @@
   -webkit-box-shadow: 0px 3px 10px rgba(88, 88, 88, 0.1), 0px 16px 31px rgba(88, 88, 88, 0.1);
           box-shadow: 0px 3px 10px rgba(88, 88, 88, 0.1), 0px 16px 31px rgba(88, 88, 88, 0.1);
   margin-left: 24px;
+  margin-right: 32px;
+  max-height: 680px;
 }
 
 .sidebar-left .inicio img {
@@ -56,6 +58,8 @@
   -webkit-box-shadow: 0px 3px 10px rgba(88, 88, 88, 0.1), 0px 16px 31px rgba(88, 88, 88, 0.1);
           box-shadow: 0px 3px 10px rgba(88, 88, 88, 0.1), 0px 16px 31px rgba(88, 88, 88, 0.1);
   margin-left: 24px;
+  margin-right: 32px;
+  max-height: 680px;
 }
 
 .sidebar-left .inicio img {
@@ -115,7 +119,10 @@
 }
 
 .header button {
+  color: #ffffff;
   border: 1px solid white;
+  background-color: #84B8E2;
+  border-radius: 48px;
 }
 
 .conteudo-principal {
@@ -126,8 +133,7 @@
 }
 
 .conteudo-principal .width-cards {
-  width: 900px;
-  margin: auto;
+  width: 580px;
   height: auto;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 16px 31px rgba(88, 88, 88, 0.1);
@@ -135,6 +141,7 @@
   border-radius: 30px;
   padding: 50px;
   margin-bottom: 20px;
+  margin-right: 24px;
 }
 
 .conteudo-principal img {
