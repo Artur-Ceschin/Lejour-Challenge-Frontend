@@ -34,7 +34,8 @@ function renderizarGraficoCasamentosVsOrcamento(data) {
             label: "Casamentos",
             borderWidth: 1,
             data: dadosCasamentos,
-            backgroundColor: '#E2645A'
+            backgroundColor: laranjaLejour,
+            hoverBackgroundColor: goiabaLejour
         }]
     };
 

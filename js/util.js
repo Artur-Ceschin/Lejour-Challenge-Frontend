@@ -1,3 +1,8 @@
+const laranjaLejour = '#EA8079';
+const goiabaLejour = '#E2645A';
+const azulCeuLejour = '#84B8E2';
+const verdeAguaEscuroLejour = '#68BFB7';
+
 function obterDadosAPILejour(endpoint, callback) {
     const URL_TO_FETCH = `https://challenge-lejour-api.herokuapp.com/api${endpoint}`;
 

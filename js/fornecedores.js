@@ -15,7 +15,8 @@ function renderizarGraficoCategoriaVsFatura(data) {
             label: "Fornecedores/Categoria",
             borderWidth: 1,
             data: dadosFornecedores,
-            backgroundColor: '#E2645A'
+            backgroundColor: laranjaLejour,
+            hoverBackgroundColor: goiabaLejour
         }]
     };
 
@@ -48,13 +49,15 @@ function renderizarGraficoAgendamentoVsFatura(data) {
             label: "Agendamentos",
             borderWidth: 1,
             data: dadosAgendamentos,
-            backgroundColor: '#E2645A'
+            backgroundColor: laranjaLejour,
+            hoverBackgroundColor: goiabaLejour
         },
         {
             label: "Invoices",
             borderWidth: 1,
             data: dadosInvoicesAceitas,
-            backgroundColor: '#84B8E2'
+            backgroundColor: azulCeuLejour,
+            hoverBackgroundColor: verdeAguaEscuroLejour
         }]
     };
 
