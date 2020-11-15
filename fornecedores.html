@@ -97,14 +97,14 @@
                         </div>
       
                         <div class="d-flex mt-4 botoes-casamento">
-                            <button>30 dias</button>
-                            <button>3 meses</button>
-                            <button>6 meses</button>
-                            <button>1 ano</button>
-                            <button>2 anos</button>
+                            <button onclick="filtrarGraficoCategoriaVsFatura('days=90')">3 meses</button>
+                            <button onclick="filtrarGraficoCategoriaVsFatura('days=180')">6 meses</button>
+                            <button onclick="filtrarGraficoCategoriaVsFatura('days=365')">1 ano</button>
+                            <button onclick="filtrarGraficoCategoriaVsFatura('days=730')">2 anos</button>
                         </div>
-                        <canvas id="faturamentoPorCategoriaFornecedorGrafico" style="height: 500px;"></canvas>
-                    </div>
+                        
+                        <canvas id="faturamentoPorCategoriaFornecedorGrafico"></canvas>  
+                  </div>
 
               </div>
 
@@ -119,13 +119,13 @@
                     </div>
   
                     <div class="d-flex mt-4 botoes-casamento">
-                        <button>30 dias</button>
-                        <button>3 meses</button>
-                        <button>6 meses</button>
-                        <button>1 ano</button>
-                        <button>2 anos</button>
+                        <button onclick="filtrarGraficoAgendamentoVsFatura('days=30')">30 dias</button>
+                        <button onclick="filtrarGraficoAgendamentoVsFatura('days=90')">3 meses</button>
+                        <button onclick="filtrarGraficoAgendamentoVsFatura('days=180')">6 meses</button>
+                        <button onclick="filtrarGraficoAgendamentoVsFatura('days=365')">1 ano</button>
+                        <button onclick="filtrarGraficoAgendamentoVsFatura('days=730')">2 anos</button>
                     </div>
-                    <canvas id="agendamentosVsFaturasGrafico" style="height: 400px;"></canvas>
+                    <canvas id="agendamentosVsFaturasGrafico"></canvas>
                 </div>
 
             </div>
