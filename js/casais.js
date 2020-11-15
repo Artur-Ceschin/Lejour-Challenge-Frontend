@@ -1,6 +1,9 @@
+const endPointCasaisChurn = '/casais/churn';
+const endPointCasaisOrcamento = '/casais/orcamento';
+
 window.onload = function() {
-    obterDadosAPILejour('/casais/churn', carregarTabelaChurn);
-    obterDadosAPILejour('/casais/orcamento', renderizarGraficoCasamentosVsOrcamento);
+    obterDadosAPILejour(endPointCasaisChurn, carregarTabelaChurn);
+    obterDadosAPILejour(endPointCasaisOrcamento, renderizarGraficoCasamentosVsOrcamento);
 }
 
 function criarLinhaTabela(id, data) {
@@ -21,10 +24,11 @@ function carregarTabelaChurn(dadosChurn) {
     for(let i = 0; i < 4; i++) {
         criarLinhaTabela(dadosChurn[i].id_usuario, dadosChurn[i].data_casamento);
     }
+
+    var totalChurn = $('#total-churn').text(dadosChurn.length);
 }
 
 function renderizarGraficoCasamentosVsOrcamento(data) {
-
     var titulos = data.map((x) => x.faixa_valor);
     var dadosCasamentos = data.map((x) => x.quantidade_casamentos);
 
@@ -39,7 +43,8 @@ function renderizarGraficoCasamentosVsOrcamento(data) {
         }]
     };
 
-    var ctx = document.getElementById('casamentoVsOrcamentoGrafico').getContext('2d');
+    var canvas = document.getElementById('casamentoVsOrcamentoGrafico');
+    var ctx = canvas.getContext('2d');
     window.myBar = new Chart(ctx, {
         type: 'bar',
         data: barChartData,
@@ -54,4 +59,10 @@ function renderizarGraficoCasamentosVsOrcamento(data) {
             }
         }
     });
+}
+
+function filtrarGraficoCasamentoVsOrcamentoData(queryParams) {
+    window.myBar.destroy();
+
+    obterDadosAPILejour(endPointCasaisOrcamento, renderizarGraficoCasamentosVsOrcamento, queryParams);
 }

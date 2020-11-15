@@ -112,7 +112,7 @@
                           <div class="btn btn-block button-color mt-3 d-flex  justify-content-between">
                             <div class="d-flex">
                               <p class="mt-2">Total:</p>
-                              <button class="footer-content circle-button ml-3">Sair</button>
+                              <button id="total-churn" class="footer-content circle-button ml-3"></button>
                             </div>
                             <div>
                               <button class="footer-content">Obter lista</button> 
@@ -136,11 +136,11 @@
                                 </div>
 
                                 <div class="d-flex mt-4 botoes-casamento">
-                                    <button>30 dias</button>
-                                    <button>3 meses</button>
-                                    <button>6 meses</button>
-                                    <button>1 ano</button>
-                                    <button>2 anos</button>
+                                    <button onclick="filtrarGraficoCasamentoVsOrcamentoData('days=30')">30 dias</button>
+                                    <button onclick="filtrarGraficoCasamentoVsOrcamentoData('days=90')">3 meses</button>
+                                    <button onclick="filtrarGraficoCasamentoVsOrcamentoData('days=180')">6 meses</button>
+                                    <button onclick="filtrarGraficoCasamentoVsOrcamentoData('days=365')">1 ano</button>
+                                    <button onclick="filtrarGraficoCasamentoVsOrcamentoData('days=730')">2 anos</button>
                                 </div>
                                 <canvas id="casamentoVsOrcamentoGrafico"></canvas>
                             </div>
